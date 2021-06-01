@@ -142,7 +142,7 @@ async function generate(data) {
     /**
      * Asignando las calidaddes 
      */
-    if (data.qualities.length > 0) {
+    if ((data.qualities || []).length > 0) {
         qualities = data.qualities;
     }
 
